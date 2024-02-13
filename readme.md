@@ -83,4 +83,6 @@ w
 ![Alt text](./image_readme/image-3.png)
 
 You can visit port [49160](http://localhost:19006/) to see our beautiful application :D
-![Alt text](./image_readme/image-4.png)
+
+![Alt text](image_readme/img.png)
+
