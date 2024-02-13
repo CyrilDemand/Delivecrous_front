@@ -1,100 +1,86 @@
 # Delivecrous - Front
+Here's the visual part of a mobile application made with React Native, resembling an app similar to Uber Eats.
 
-Voici la partie visuel d'une application mobile réalisé en react-native d'une application ressemblant ubereat.
+## Table of Contents
 
-## Table des Matières
-
-- [Prérequis](#prérequis)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Installation avec docker](#installation)
-- [Utilisation](#utilisation)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
+- [Installation with Docker](#installation-with-docker)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Prerequisites
 
-## Prérequis
+To launch the project, you first need to download the latest version of Node.js: https://nodejs.org/en. The recommended version for most users at the time of writing this README is 18.17.1 LTS.
 
-Pour pouvoir lancer le projet il faut d'abord télécharger la dernière version de node.js : https://nodejs.org/fr
-la version recommandé pour la plupart des utilisateurs est à l'heure où j'édite ce readme : 18.17.1.LTS
-
-Pour vérifier que l’installation s’est bien passée, vous pouvez ouvrir votre Terminal ou Invite de commande et taper node -v qui devrait vous renvoyer la version de Node.js installée et npm -v qui devrait vous renvoyer la version de npm installée.
+To check if the installation was successful, you can open your Terminal or Command Prompt and type `node -v`, which should return the installed version of Node.js, and `npm -v`, which should return the installed version of npm.
 
 ## Installation
 
 ```bash
-# Clonez le référentiel
+# Clone the repository
 git clone https://github.com/theoernould/projet-rentree-front.git
 
-# Accédez au répertoire du projet
+# Go to the project directory
 cd projet-rentree-front
 
-# Installez les dépendances
+# Install dependencies
 npm install
 
-# lancer le projet
+# Launch the project
 npm start
 
-# lancer dans une application web
+# Launch in a web application
 w
-
 ```
 
-## Installation avec docker
+## Installation with Docker
 
-### Installer docker
+### Install Docker
 
-Afin de lancer notre front avec docker il faut déjà le télécharger et l'installer.
-voici les liens des guides pour [windows](https://docs.docker.com/desktop/install/windows-install/), [mac](https://docs.docker.com/desktop/install/mac-install/), [linux](https://docs.docker.com/desktop/install/linux-install/).
+To launch our front end with Docker, you first need to download and install it. Here are the links to the guides for [Windows](https://docs.docker.com/desktop/install/windows-install/), [Mac](https://docs.docker.com/desktop/install/mac-install/), and [Linux](https://docs.docker.com/desktop/install/linux-install/).
 
-### Installer le projet 
+### Install the Project
 
-- lancer un terminal dans un répertoire
+- Open a terminal in a directory
 
 ```bash
-
-# télécharger les fichiers du projet
+# Download the project files
 git clone https://github.com/theoernould/projet-rentree-front.git
 
-# aller dans le répertoire du projet
+# Go to the project directory
 cd projet-rentree-front
-
 ```
 
-### créer l'image docker
+### Create the Docker Image
 
 ```bash
-
-#installe l'image
+# Build the image
 docker build . -t front_projet
 
-#lance un conteiner de l'image, redirige le port 19006 de la machine docker au port de votre machine 49160
+# Run a container from the image, redirecting port 19006 of the Docker machine to port 19006 of your machine
 docker run -p 19006:19006 -d front_projet
-
 ```
 
-Vous pourez ensuite aller sur docker hub et cliquer sur le conteiner qui a un nom aléatoire. Mais vous pourrez voir que l'image se nomme bien "front_projet"
+You can then go to Docker Hub and click on the container with a random name. But you will see that the image is correctly named "front_projet".
 ![Alt text](./image_readme/image.png)
 
-
-Vous verrez plusieurs cliquer sur l'onglet "terminal"
-
+You will see several options; click on the "terminal" tab.
 ![Alt text](./image_readme/image-1.png)
 
-
-Vous pourrez ensuite faire les commandes suivantes dans le terminal
+You can then perform the following commands in the terminal:
 
 ```bash
-# lancer le projet
+# Launch the project
 npm start
 
-# lancer dans une application web
+# Launch in a web application
 w
 ```
-
 ![Alt text](./image_readme/image-2.png)
 
 ![Alt text](./image_readme/image-3.png)
 
-Vous pourrez aller sur le port [49160](http://localhost:49160/) pour aller voir notre belle application :D
-
+You can visit port [49160](http://localhost:19006/) to see our beautiful application :D
 ![Alt text](./image_readme/image-4.png)
